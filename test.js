@@ -172,11 +172,7 @@ const foods ={
         }
 
     },
-    51:{ //bakery
-        cat_name:"bakery",
-        cat_img: "png's/placeholder-cropped.svg"
-    },
-    52:{//desserts
+    51:{//desserts
         cat_name:"desserts",
         cat_img:"png's/placeholder-cropped.svg",
         items:  {
@@ -243,7 +239,7 @@ if(container){
         }
         else{
             container1.innerHTML  += `
-                    <a "class="prod" href= sub-menu.html?id=${p}"><div class="area">
+                    <a class="prod" href= "sub-menu.html?id=${p}"><div class="area">
                         <img src="${cat.cat_img}">
                         <p class ="growable">${cat.cat_name}</p>
                     </div> </a>
@@ -255,14 +251,14 @@ if(container){
 };
 const params = new URLSearchParams(window.location.search);
 
-const id = params.get("id");
+const idd = params.get("id");
 //UNIQUE TO THE SUBMENU!!!!
 
 
 
 if(sub_menu){
     Object.keys(foods).forEach(function(id){
-        sub_menu.innerHTML+=`<h1 class="type">${foods[id].cat_name}</h1>`
+        sub_menu.innerHTML+=`<h1 class="type" id="pos${id}">${foods[id].cat_name}</h1>`
         let html = `<div class="grid-container1">`;
         Object.keys(foods[id].items).forEach(function(p){
             let thingy = foods[id].items[p]
@@ -278,9 +274,13 @@ if(sub_menu){
         
         
     })
+    //this piece of code usses the id given by the site to jump to the element with the id pos${idd}
+    console.log("pos" + idd)
+    document.getElementById("pos" + idd).scrollIntoView()
 };
-const cat_id = id%100;
-const sp_id = Math.floor(id/100);
+
+const cat_id = idd%100;
+const sp_id = Math.floor(idd/100);
 console.log(cat_id)
 console.log(sp_id)
 const butt = document.getElementById("buttons")
