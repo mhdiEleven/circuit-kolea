@@ -46,6 +46,7 @@ const foods ={
                 price:"50",
 
                 ing:"coffee powder , water"
+
             },
             12:{
                 name:"coffee caps",
@@ -98,6 +99,49 @@ const foods ={
                 price:"350",
                 ing:""
             }
+        }
+    },
+    12:{
+        cat_name:"moktails",
+        cat_img:"png's/placeholder-cropped.svg",
+        items:{
+            11:{
+                name:"pink lady",
+                price:"500",
+
+                ing:""
+            },
+            12:{
+                name:"borabora",
+                price:"450",
+
+                ing:""
+            },
+            13:{
+                name:"blue star",
+                price:"450",
+
+                ing:""
+            },
+            14:{
+                name:"blue hawai",
+                price:"500",
+
+                ing:""
+            },
+            15:{
+                name:"pina colada",
+                price:"500",
+
+                ing:""
+            },
+            16:{
+                name:"hawai",
+                price:"500",
+
+                ing:""
+            },
+
         }
     },
     //WARNING EVERYTHING ABOVE IS DRINKS
