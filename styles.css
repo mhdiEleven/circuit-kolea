@@ -364,6 +364,11 @@ label{
 }
 
 @media (width<600px) {
+.area1 img{
+
+    justify-self: center;
+    width: 100px;
+}
   .grid-container{
     grid-template-columns: 1fr ;
   }
