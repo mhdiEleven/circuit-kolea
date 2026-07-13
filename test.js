@@ -144,7 +144,6 @@ const foods ={
 
         }
     },
-
     14:{//jus
         cat_name:"jus",
         cat_img:"png's/placeholder-cropped.svg",
@@ -192,7 +191,7 @@ const foods ={
 
         }
     },
-    15:{//cocktails & fresh
+    15:{//cocktails
         cat_name:"cocktails",
         cat_img:"png's/placeholder-cropped.svg",
         items:{
@@ -213,7 +212,6 @@ const foods ={
             }
         }
     },
-
     16:{//frappuccino
         cat_name:"frappuccino",
         cat_img:"png's/placeholder-cropped.svg",
@@ -230,7 +228,6 @@ const foods ={
             }
         }
     },
-
     17:{//mojitos
         cat_name:"mojitos",
         cat_img:"png's/placeholder-cropped.svg",
@@ -267,7 +264,6 @@ const foods ={
             }
         }
     },
-
     18:{//milkshakes
         cat_name:"milkshakes",
         cat_img:"png's/placeholder-cropped.svg",
@@ -373,8 +369,8 @@ const foods ={
         }
 
     },
-    51:{//desserts
-        cat_name:"desserts",
+    51:{//creps
+        cat_name:"crepe",
         cat_img:"png's/placeholder-cropped.svg",
         items:  {
             11:{
@@ -423,6 +419,79 @@ const foods ={
             },
 
         }
+    },
+    52:{//gaufres
+        cat_name:"gaufres",
+        cat_img:"png's/placeholder-cropped.svg",
+        items:{
+            11:{
+                name:"simple",
+                price:"450",
+                ing:""
+            },
+            12:{
+                name:"banane",
+                price:"550",
+                ing:""
+            },
+            13:{
+                name:"fraise",
+                price:"550",
+                ing:""
+            },
+            14:{
+                name:"pistache",
+                price:"700",
+                ing:""
+            },
+            15:{
+                name:"lotus",
+                price:"700",
+                ing:""
+            },
+            16:{
+                name:"special",
+                price:"900",
+                ing:""
+            }
+        }
+    },
+
+    53:{//bubble waffles
+        cat_name:"bubble waffles",
+        cat_img:"png's/placeholder-cropped.svg",
+        items:{
+            11:{
+                name:"simple",
+                price:"450",
+                ing:""
+            },
+            12:{
+                name:"banane",
+                price:"550",
+                ing:""
+            },
+            13:{
+                name:"fraise",
+                price:"550",
+                ing:""
+            },
+            14:{
+                name:"pistache",
+                price:"700",
+                ing:""
+            },
+            15:{
+                name:"lotus",
+                price:"700",
+                ing:""
+            },
+            16:{
+                name:"le circuit",
+                price:"700",
+                ing:""
+            }
+        }
     }
 }
 
@@ -464,7 +533,7 @@ if(sub_menu){
         Object.keys(foods[id].items).forEach(function(p){
             let thingy = foods[id].items[p]
             html+=`
-                <a href="product.html?id=${p+id}" class="prod"><div class="area1">
+                <a href="product.html?id=${p+id}" class="prod1"><div class="area1">
                     <img src="png's/product/${thingy.name}.png">
                     <p class ="growable">${thingy.name}</p>
                 </div> </a>
@@ -486,7 +555,9 @@ console.log(cat_id)
 console.log(sp_id)
 const butt = document.getElementById("buttons")
 
+
 if(sp_id != 0){
+    const del = document.getElementById("delete")
     const item = foods[cat_id].items[sp_id]; // this will be ussed for the product page heavly as it should contain all of said products meta data
     const product_img = document.getElementById("prod");
     product_img.innerHTML = `<img src="png's/product/${item.name}.png">
@@ -498,6 +569,7 @@ if(sp_id != 0){
 
     const greed = document.getElementById("ingreed");
     greed.innerHTML=item.ing
+    if(!item.ing){del.remove()}
     const price = document.getElementById("pricee")
     if(Array.isArray(item.price)){
         butt.innerHTML = `

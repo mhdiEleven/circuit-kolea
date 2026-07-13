@@ -13,6 +13,12 @@ a:visited,a:link{
   color:#093514;
 }
 .prod{
+
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+.prod1{
+  text-decoration: none;
   margin-bottom: 20px;
   margin-left: 20px;
 }
@@ -62,7 +68,7 @@ h1{
   background-color: black;
 
 }
-.area .growable{
+.growable{
   font-size: 2.9vw;
 }
 p{
@@ -269,6 +275,8 @@ hr{
     grid-template-columns: 1fr 1fr ;
 }
 
+
+
 .area{
     display: flex;
     justify-content: flex-start;
@@ -276,20 +284,6 @@ hr{
   
   margin-bottom: 20px;
   
-}
-.area1{
-  display:flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  
-
-  
-}
-.area1 img{
-
-  justify-self: center;
-  width: 50%;
 }
 .area p{
 
@@ -304,7 +298,28 @@ hr{
   
   width: 20%;
 }
+.area1{
+  
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  
+  margin-bottom: 20px;
+  
+}
+.area1 p{
 
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 20px;
+  font-size: 20px;
+}
+.area1 img{
+  
+  margin-left: 20px;
+  
+  width: 20%;
+}
 .cent p{
   display: flex;
   justify-content: center;
@@ -364,11 +379,20 @@ label{
 }
 
 @media (width<600px) {
-.area1 img{
+  .area1{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+
+    
+  }
+  .area1 img{
 
     justify-self: center;
     width: 100px;
-}
+  }
   .grid-container{
     grid-template-columns: 1fr ;
   }
