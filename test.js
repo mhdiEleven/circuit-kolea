@@ -144,7 +144,8 @@ const foods ={
 
         }
     },
-    13:{//jus
+
+    14:{//jus
         cat_name:"jus",
         cat_img:"png's/placeholder-cropped.svg",
         items:{
@@ -191,6 +192,115 @@ const foods ={
 
         }
     },
+    15:{//cocktails & fresh
+        cat_name:"cocktails",
+        cat_img:"png's/placeholder-cropped.svg",
+        items:{
+            11:{
+                name:"cocktail",
+                price:"450",
+                ing:""
+            },
+            12:{
+                name:"pina colada",
+                price:"700",
+                ing:""
+            },
+            13:{
+                name:"ananas",
+                price:"600",
+                ing:""
+            }
+        }
+    },
+
+    16:{//frappuccino
+        cat_name:"frappuccino",
+        cat_img:"png's/placeholder-cropped.svg",
+        items:{
+            11:{
+                name:"fraise",
+                price:"450",
+                ing:""
+            },
+            12:{
+                name:"nutella",
+                price:"550",
+                ing:""
+            }
+        }
+    },
+
+    17:{//mojitos
+        cat_name:"mojitos",
+        cat_img:"png's/placeholder-cropped.svg",
+        items:{
+            11:{
+                name:"mojito classique",
+                price:"400",
+                ing:""
+            },
+            12:{
+                name:"mojito fraise",
+                price:"450",
+                ing:""
+            },
+            13:{
+                name:"mojito bleu",
+                price:"450",
+                ing:""
+            },
+            14:{
+                name:"mojito vegetarian",
+                price:"450",
+                ing:""
+            },
+            15:{
+                name:"mojito kiwi",
+                price:"550",
+                ing:""
+            },
+            16:{
+                name:"mojito noix de coco",
+                price:"600",
+                ing:""
+            }
+        }
+    },
+
+    18:{//milkshakes
+        cat_name:"milkshakes",
+        cat_img:"png's/placeholder-cropped.svg",
+        items:{
+            11:{
+                name:"nutella",
+                price:"450",
+                ing:""
+            },
+            12:{
+                name:"fraise banane",
+                price:"550",
+                ing:""
+            },
+            13:{
+                name:"ferrero",
+                price:"700",
+                ing:""
+            },
+            14:{
+                name:"snickers",
+                price:"650",
+                ing:""
+            },
+            15:{
+                name:"lotus",
+                price:"700",
+                ing:""
+            }
+        }
+    },
+
+
     //WARNING EVERYTHING ABOVE IS DRINKS
     //EVERYTHING BELOW IS FOODS
 
