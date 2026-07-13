@@ -37,7 +37,7 @@ const container = document.getElementById("drinkie");
 const container1 = document.getElementById("foodie");
 
 const foods ={
-    11:{
+    11:{//coffee
         cat_name:"Coffee",
         cat_img:"png's/coffee-removebg-preview.png",
         items:{
@@ -101,7 +101,7 @@ const foods ={
             }
         }
     },
-    12:{
+    12:{//moktails
         cat_name:"moktails",
         cat_img:"png's/placeholder-cropped.svg",
         items:{
@@ -141,6 +141,53 @@ const foods ={
 
                 ing:""
             },
+
+        }
+    },
+    13:{//jus
+        cat_name:"jus",
+        cat_img:"png's/placeholder-cropped.svg",
+        items:{
+            11:{
+                name:"jus doronge",
+                price:"400",
+                ing:""
+            },
+            12:{
+                name:"jus citron",
+                price:"400",
+                ing:""
+            },
+            13:{
+                name:"jus fraise",
+                price:"400",
+                ing:""
+            },
+            14:{
+                name:"jus banane",
+                price:"400",
+                ing:""
+            },
+            15:{
+                name:"jus de pomme",
+                price:"450",
+                ing:""
+            },
+            16:{
+                name:"jus pêche",
+                price:"400",
+                ing:""
+            },
+            17:{
+                name:"jus anans",
+                price:"500",
+                ing:""
+            },
+            18:{
+                name:"jus cocktail",
+                price:"450",
+                ing:""
+            }
 
         }
     },
