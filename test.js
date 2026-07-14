@@ -269,27 +269,47 @@ const foods ={
         cat_img:"png's/placeholder-cropped.svg",
         items:{
             11:{
-                name:"nutella",
+                name:"milkshake nutella",
                 price:"450",
                 ing:""
             },
+            49:{
+                name:"milkshake nutella banane",
+                price:"550",
+                ing:""
+            },
             12:{
-                name:"fraise banane",
+                name:"milkshake fraise banane",
                 price:"550",
                 ing:""
             },
             13:{
-                name:"ferrero",
+                name:"milkshake ferrero",
                 price:"700",
                 ing:""
             },
             14:{
-                name:"snickers",
+                name:"milkshake snickers",
                 price:"650",
                 ing:""
             },
             15:{
-                name:"lotus",
+                name:"milkshake lotus",
+                price:"700",
+                ing:""
+            },
+            16:{
+                name:"milkshake bounty",
+                price:"700",
+                ing:""
+            },
+            17:{
+                name:"milkshake bounty",
+                price:"700",
+                ing:""
+            },
+            18:{
+                name:"milkshake pistache",
                 price:"700",
                 ing:""
             }
