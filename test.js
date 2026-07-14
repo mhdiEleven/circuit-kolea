@@ -563,7 +563,7 @@ if(sp_id != 0){
     product_img.innerHTML = `<img src="png's/product/${item.name}.png">
           <div class="group">
         <p class="product-name" id="title">${item.name}</p>
-        <p class="calorie">10 Kcal</p>
+        
       </div>`
     
 
