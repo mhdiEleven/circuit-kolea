@@ -174,12 +174,12 @@ const foods ={
                 ing:""
             },
             16:{
-                name:"jus pêche",
+                name:"jus peche",
                 price:"400",
                 ing:""
             },
             17:{
-                name:"jus anans",
+                name:"jus ananas",
                 price:"500",
                 ing:""
             },
@@ -303,11 +303,7 @@ const foods ={
                 price:"700",
                 ing:""
             },
-            17:{
-                name:"milkshake bounty",
-                price:"700",
-                ing:""
-            },
+
             18:{
                 name:"milkshake pistache",
                 price:"700",
