@@ -223,7 +223,7 @@ const foods ={
                 ing:""
             },
             13:{
-                name:"mojito bleu",
+                name:"mojito blue",
                 price:"450",
                 ing:""
             },
