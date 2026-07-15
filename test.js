@@ -191,38 +191,18 @@ const foods ={
 
         }
     },
-    15:{//cocktails
-        cat_name:"cocktails",
-        cat_img:"png's/placeholder-cropped.svg",
-        items:{
-            11:{
-                name:"cocktail",
-                price:"450",
-                ing:""
-            },
-            12:{
-                name:"pina colada",
-                price:"700",
-                ing:""
-            },
-            13:{
-                name:"ananas",
-                price:"600",
-                ing:""
-            }
-        }
-    },
+
     16:{//frappuccino
         cat_name:"frappuccino",
         cat_img:"png's/placeholder-cropped.svg",
         items:{
             11:{
-                name:"fraise",
+                name:"frappuccino fraise",
                 price:"450",
                 ing:""
             },
             12:{
-                name:"nutella",
+                name:"frappuccino nutella",
                 price:"550",
                 ing:""
             }
@@ -346,7 +326,7 @@ const foods ={
                 ing:":sauce tomato , cheddar , mezzarila , pouli foumi"
             },
             15:{
-                name:"dend fumer",
+                name:"pizza dend fumer",
                 
                 price:[800,1600,2500],
                 ing:"sauce tomato , cheddar , mozzarila , dend fumer"
@@ -375,12 +355,7 @@ const foods ={
                 price:[850,1700,2600],
                 ing:"sauce tomato , cheddar , mozzarila, salmon"
             },
-            20:{
-                name:"pizza enchoi",
-                
-                price:[850,1700,2600],
-                ing:"sauce tomato , cheddar , mozzarila, enchio "
-            }
+
 
         }
 
