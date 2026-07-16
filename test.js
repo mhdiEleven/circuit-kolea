@@ -39,7 +39,7 @@ const container1 = document.getElementById("foodie");
 const foods ={
     11:{//coffee
         cat_name:"Coffee",
-        cat_img:"png's/coffee-removebg-preview.png",
+        cat_img:"png's/product/coffee latte.png",
         items:{
             11:{
                 name:"coffee press",
@@ -103,7 +103,7 @@ const foods ={
     },
     12:{//moktails
         cat_name:"moktails",
-        cat_img:"png's/placeholder-cropped.svg",
+        cat_img:"png's/product/pink lady.png",
         items:{
             11:{
                 name:"pink lady",
@@ -146,7 +146,7 @@ const foods ={
     },
     14:{//jus
         cat_name:"jus",
-        cat_img:"png's/placeholder-cropped.svg",
+        cat_img:"png's/product/jus fraise.png",
         items:{
             11:{
                 name:"jus doronge",
@@ -194,7 +194,7 @@ const foods ={
 
     16:{//frappuccino
         cat_name:"frappuccino",
-        cat_img:"png's/placeholder-cropped.svg",
+        cat_img:"png's/product/frappuccino fraise.png",
         items:{
             11:{
                 name:"frappuccino fraise",
@@ -210,7 +210,7 @@ const foods ={
     },
     17:{//mojitos
         cat_name:"mojitos",
-        cat_img:"png's/placeholder-cropped.svg",
+        cat_img:"png's/product/mojito fraise.png",
         items:{
             11:{
                 name:"mojito classique",
@@ -246,7 +246,7 @@ const foods ={
     },
     18:{//milkshakes
         cat_name:"milkshakes",
-        cat_img:"png's/placeholder-cropped.svg",
+        cat_img:"png's/product/milkshake fraise banane.png",
         items:{
             11:{
                 name:"milkshake nutella",
@@ -361,17 +361,17 @@ const foods ={
 
     },
     51:{//creps
-        cat_name:"crepe",
+        cat_name:"crepes",
         cat_img:"png's/placeholder-cropped.svg",
         items:  {
             11:{
-                name:"crepe simple",
+                name:"crepes simple",
                 ing:"cpeps ing",
                 price:350,
             
             },
             12:{
-                name:"crepe banana",
+                name:"crepes banana",
                 ing:"crepes ing",
                 price:450,
             },
@@ -387,19 +387,19 @@ const foods ={
                 price:550,
             },
             15:{
-                name:"crepe pistachio",
+                name:"crepes pistachio",
                 
                 ing:"crepes ing",
                 price:600,
             },
             16:{
-                name:"crepe lotus",
+                name:"crepes lotus",
                 
                 ing:"crepes ing",
                 price:600,
             },
             17:{
-                name:"crepe 4choco",
+                name:"crepes 4choco",
                 
                 ing:"crepes ing",
                 price:800,
@@ -490,7 +490,7 @@ const sub_menu = document.getElementById("subby");
 if(container){
     Object.keys(foods).forEach(function(p){
         const cat = foods[p]
-        if (p<50){
+        if (p>=50){
             container.innerHTML  += `
                     <a class="prod" href="sub-menu.html?id=${p}" ><div class="area">
                         <img src="${cat.cat_img}">
@@ -591,4 +591,4 @@ sub_menu.innerHTML+=`        <hr class="devide color">
       <a href="https://www.facebook.com/people/Le-Circuit/61587492091959/"><img src="png's/facebook-outline-svgrepo-com.svg" class="small"></a>
       <a href="https://www.tiktok.com/@le.circuit42"><img src="png's/tiktok-outline-svgrepo-com.svg" class="small"></a>
     </footer>
-    <p>call us at  <a href="tel:0555075637"></a>:0555075637</p>`
+    <p>contact us  <a href="tel:0555075637"></a>:0555075637</p>`
