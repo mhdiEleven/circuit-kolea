@@ -37,7 +37,240 @@ const container = document.getElementById("drinkie");
 const container1 = document.getElementById("foodie");
 
 const foods ={
-    11:{//coffee
+    11:{ //pizzas
+        cat_name:"pizza",
+        cat_img:"png's/product/pizza viend.png",
+        //now the spesific products
+        items:{
+            11:{
+                name:"pizza classic",
+                
+                price:[500,1000,1500],
+                ing:"sauce tomato , cheddar , mozzarila"
+            },
+            12:{
+                name:"pizza ton",
+                
+                price:[650,1400,2000],
+                ing:"sauce tomato , cheddar , mozzarila , tuna"
+            },
+            13:{
+                name:"pizza viend",
+                
+                price:[700,1500,2200],
+                ing:"sauce tomato , cheddar , mozzarila , viend"
+            },
+            14:{
+                name:"pizza poule fumme",
+                
+                price:[700,1500,2200],
+                ing:":sauce tomato , cheddar , mezzarila , pouli foumi"
+            },
+            15:{
+                name:"pizza dend fumer",
+                
+                price:[800,1600,2500],
+                ing:"sauce tomato , cheddar , mozzarila , dend fumer"
+            },
+            16:{
+                name:"pizza vegitarien",
+                
+                price:[750,1600,2300],
+                ing:" sauce tomato , cheddar , mozzarila, grielle , comombear"
+            },
+            17:{
+                name:"pizza peperoni",
+                
+                price:[800,1600,2500],
+                ing:"sauce tomato , cheddar , mozzarila , peporoni"
+            },
+            18:{
+                name:"pizza 4 fromage",
+                
+                price:[800,1600,2500],
+                ing:"sauce tomato , cheddar , mozzarila, grielle , comombear"
+            },
+            19:{
+                name:"pizza salmon",
+                
+                price:[850,1700,2600],
+                ing:"sauce tomato , cheddar , mozzarila, salmon"
+            },
+
+
+        }
+
+    },
+    12:{//creps
+        cat_name:"crepes",
+        cat_img:"png's/placeholder-cropped.svg",
+        items:  {
+            11:{
+                name:"crepes simple",
+                ing:"cpeps ing",
+                price:350,
+            
+            },
+            12:{
+                name:"crepes banana",
+                ing:"crepes ing",
+                price:450,
+            },
+            13:{
+                name:"crepes ananas",
+                ing:"crepes ing",
+                price:550,
+            },
+            14:{
+                name:"crepes 2 fruts",
+                
+                ing:"crepes ing",
+                price:550,
+            },
+            15:{
+                name:"crepes pistachio",
+                
+                ing:"crepes ing",
+                price:600,
+            },
+            16:{
+                name:"crepes lotus",
+                
+                ing:"crepes ing",
+                price:600,
+            },
+            17:{
+                name:"crepes 4choco",
+                
+                ing:"crepes ing",
+                price:800,
+            },
+            18:{
+                name:"goufres",
+                img:""
+            },
+
+        }
+    },
+    13:{//gaufres
+        cat_name:"gaufres",
+        cat_img:"png's/placeholder-cropped.svg",
+        items:{
+            11:{
+                name:"simple",
+                price:"450",
+                ing:""
+            },
+            12:{
+                name:"banane",
+                price:"550",
+                ing:""
+            },
+            13:{
+                name:"fraise",
+                price:"550",
+                ing:""
+            },
+            14:{
+                name:"pistache",
+                price:"700",
+                ing:""
+            },
+            15:{
+                name:"lotus",
+                price:"700",
+                ing:""
+            },
+            16:{
+                name:"special",
+                price:"900",
+                ing:""
+            }
+        }
+    },
+    14:{//bubble waffles
+        cat_name:"bubble waffles",
+        cat_img:"png's/placeholder-cropped.svg",
+        items:{
+            11:{
+                name:"simple",
+                price:"450",
+                ing:""
+            },
+            12:{
+                name:"banane",
+                price:"550",
+                ing:""
+            },
+            13:{
+                name:"fraise",
+                price:"550",
+                ing:""
+            },
+            14:{
+                name:"pistache",
+                price:"700",
+                ing:""
+            },
+            15:{
+                name:"lotus",
+                price:"700",
+                ing:""
+            },
+            16:{
+                name:"le circuit",
+                price:"900",
+                ing:""
+            }
+        }
+    },
+    15:{//sweets
+        cat_name:"sweets",
+        cat_img:"png's/placeholder-cropped.svg",
+        items:{
+            11:{
+                name:"jazz",
+                price:"400",
+                ing:""
+            },
+            12:{
+                name:"cheesecake",
+                price:"500",
+                ing:""
+            },
+            13:{
+                name:"tiramisu",
+                price:"500",
+                ing:""
+            },
+            14:{
+                name:"brownies",
+                price:"300",
+                ing:""
+            },
+            15:{
+                name:"flan",
+                price:"200",
+                ing:""
+            },
+            16:{
+                name:"cancake",
+                price:"450",
+                ing:""
+            },
+            17:{
+                name:"crunchy",
+                price:"450",
+                ing:""
+            },
+            18:{
+                name:"sneakers",
+                price:"400",
+                ing:""
+            }
+        }
+    },
+    50:{//coffee
         cat_name:"Coffee",
         cat_img:"png's/product/coffee latte.png",
         items:{
@@ -101,7 +334,7 @@ const foods ={
             }
         }
     },
-    12:{//moktails
+    51:{//moktails
         cat_name:"moktails",
         cat_img:"png's/product/pink lady.png",
         items:{
@@ -144,7 +377,7 @@ const foods ={
 
         }
     },
-    14:{//jus
+    52:{//jus
         cat_name:"jus",
         cat_img:"png's/product/jus fraise.png",
         items:{
@@ -192,7 +425,7 @@ const foods ={
         }
     },
 
-    16:{//frappuccino
+    53:{//frappuccino
         cat_name:"frappuccino",
         cat_img:"png's/product/frappuccino fraise.png",
         items:{
@@ -205,10 +438,15 @@ const foods ={
                 name:"frappuccino nutella",
                 price:"550",
                 ing:""
+            },
+            13:{
+                name:"frappuccino caramel",
+                price:"450",
+                ing:""
             }
         }
     },
-    17:{//mojitos
+    54:{//mojitos
         cat_name:"mojitos",
         cat_img:"png's/product/mojito fraise.png",
         items:{
@@ -244,7 +482,7 @@ const foods ={
             }
         }
     },
-    18:{//milkshakes
+    55:{//milkshakes
         cat_name:"milkshakes",
         cat_img:"png's/product/milkshake fraise banane.png",
         items:{
@@ -293,204 +531,18 @@ const foods ={
     },
 
 
+
     //WARNING EVERYTHING ABOVE IS DRINKS
     //EVERYTHING BELOW IS FOODS
 
-    50:{ //pizzas
-        cat_name:"pizza",
-        cat_img:"png's/product/pizza viend.png",
-        //now the spesific products
-        items:{
-            11:{
-                name:"pizza simple",
-                
-                price:[500,1000,1500],
-                ing:"sauce tomato , cheddar , mozzarila"
-            },
-            12:{
-                name:"pizza ton",
-                
-                price:[650,1400,2000],
-                ing:"sauce tomato , cheddar , mozzarila , tuna"
-            },
-            13:{
-                name:"pizza viend",
-                
-                price:[700,1500,2200],
-                ing:"sauce tomato , cheddar , mozzarila , viend"
-            },
-            14:{
-                name:"pizza poule fumme",
-                
-                price:[700,1500,2200],
-                ing:":sauce tomato , cheddar , mezzarila , pouli foumi"
-            },
-            15:{
-                name:"pizza dend fumer",
-                
-                price:[800,1600,2500],
-                ing:"sauce tomato , cheddar , mozzarila , dend fumer"
-            },
-            16:{
-                name:"pizza vegitarien",
-                
-                price:[750,1600,2300],
-                ing:" sauce tomato , cheddar , mozzarila, grielle , comombear"
-            },
-            17:{
-                name:"pizza peperoni",
-                
-                price:[800,1600,2500],
-                ing:"sauce tomato , cheddar , mozzarila , peporoni"
-            },
-            18:{
-                name:"pizza 4 fromage",
-                
-                price:[800,1600,2500],
-                ing:"sauce tomato , cheddar , mozzarila, grielle , comombear"
-            },
-            19:{
-                name:"pizza salmon",
-                
-                price:[850,1700,2600],
-                ing:"sauce tomato , cheddar , mozzarila, salmon"
-            },
 
-
-        }
-
-    },
-    51:{//creps
-        cat_name:"crepes",
-        cat_img:"png's/placeholder-cropped.svg",
-        items:  {
-            11:{
-                name:"crepes simple",
-                ing:"cpeps ing",
-                price:350,
-            
-            },
-            12:{
-                name:"crepes banana",
-                ing:"crepes ing",
-                price:450,
-            },
-            13:{
-                name:"crepes ananas",
-                ing:"crepes ing",
-                price:550,
-            },
-            14:{
-                name:"crepes 2 fruts",
-                
-                ing:"crepes ing",
-                price:550,
-            },
-            15:{
-                name:"crepes pistachio",
-                
-                ing:"crepes ing",
-                price:600,
-            },
-            16:{
-                name:"crepes lotus",
-                
-                ing:"crepes ing",
-                price:600,
-            },
-            17:{
-                name:"crepes 4choco",
-                
-                ing:"crepes ing",
-                price:800,
-            },
-            18:{
-                name:"goufres",
-                img:""
-            },
-
-        }
-    },
-    52:{//gaufres
-        cat_name:"gaufres",
-        cat_img:"png's/placeholder-cropped.svg",
-        items:{
-            11:{
-                name:"simple",
-                price:"450",
-                ing:""
-            },
-            12:{
-                name:"banane",
-                price:"550",
-                ing:""
-            },
-            13:{
-                name:"fraise",
-                price:"550",
-                ing:""
-            },
-            14:{
-                name:"pistache",
-                price:"700",
-                ing:""
-            },
-            15:{
-                name:"lotus",
-                price:"700",
-                ing:""
-            },
-            16:{
-                name:"special",
-                price:"900",
-                ing:""
-            }
-        }
-    },
-
-    53:{//bubble waffles
-        cat_name:"bubble waffles",
-        cat_img:"png's/placeholder-cropped.svg",
-        items:{
-            11:{
-                name:"simple",
-                price:"450",
-                ing:""
-            },
-            12:{
-                name:"banane",
-                price:"550",
-                ing:""
-            },
-            13:{
-                name:"fraise",
-                price:"550",
-                ing:""
-            },
-            14:{
-                name:"pistache",
-                price:"700",
-                ing:""
-            },
-            15:{
-                name:"lotus",
-                price:"700",
-                ing:""
-            },
-            16:{
-                name:"le circuit",
-                price:"700",
-                ing:""
-            }
-        }
-    }
 }
 
 const sub_menu = document.getElementById("subby");
 if(container){
     Object.keys(foods).forEach(function(p){
         const cat = foods[p]
-        if (p>=50){
+        if (p<50){
             container.innerHTML  += `
                     <a class="prod" href="sub-menu.html?id=${p}" ><div class="area">
                         <img src="${cat.cat_img}">
