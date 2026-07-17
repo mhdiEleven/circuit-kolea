@@ -43,63 +43,60 @@ const foods ={
         //now the spesific products
         items:{
             11:{
-                name:"pizza classic",
+                name:"pizza classique",
                 
                 price:[500,1000,1500],
-                ing:"sauce tomato , cheddar , mozzarila"
+                ing:"sauce tomate, cheddar, mozzarella"
             },
             12:{
-                name:"pizza ton",
+                name:"pizza thon",
                 
                 price:[650,1400,2000],
-                ing:"sauce tomato , cheddar , mozzarila , tuna"
+                ing:"sauce tomate, cheddar, mozzarella, thon"
             },
             13:{
-                name:"pizza viend",
+                name:"pizza viande",
                 
                 price:[700,1500,2200],
-                ing:"sauce tomato , cheddar , mozzarila , viend"
+                ing:"sauce tomate, cheddar, mozzarella, viande"
             },
             14:{
-                name:"pizza poule fumme",
+                name:"pizza poulet fumé",
                 
                 price:[700,1500,2200],
-                ing:":sauce tomato , cheddar , mezzarila , pouli foumi"
+                ing:"sauce tomate, cheddar, mozzarella, poulet fumé"
             },
             15:{
-                name:"pizza dend fumer",
+                name:"pizza dinde fumée",
                 
                 price:[800,1600,2500],
-                ing:"sauce tomato , cheddar , mozzarila , dend fumer"
+                ing:"sauce tomate, cheddar, mozzarella, dinde fumée"
             },
             16:{
-                name:"pizza vegitarien",
+                name:"pizza végétarienne",
                 
                 price:[750,1600,2300],
-                ing:" sauce tomato , cheddar , mozzarila, grielle , comombear"
+                ing:"sauce tomate, cheddar, mozzarella, grillé, camembert"
             },
             17:{
-                name:"pizza peperoni",
+                name:"pizza pepperoni",
                 
                 price:[800,1600,2500],
-                ing:"sauce tomato , cheddar , mozzarila , peporoni"
+                ing:"sauce tomate, cheddar, mozzarella, pepperoni"
             },
             18:{
-                name:"pizza 4 fromage",
+                name:"pizza quatre fromages",
                 
                 price:[800,1600,2500],
-                ing:"sauce tomato , cheddar , mozzarila, grielle , comombear"
+                ing:"sauce tomate, cheddar, mozzarella, gruyère, camembert"
             },
             19:{
-                name:"pizza salmon",
+                name:"pizza saumon",
                 
                 price:[850,1700,2600],
-                ing:"sauce tomato , cheddar , mozzarila, salmon"
+                ing:"sauce tomate, cheddar, mozzarella, saumon"
             },
-
-
         }
-
     },
     12:{//creps
         cat_name:"crepes",
