@@ -157,32 +157,32 @@ const foods ={
         cat_img:"png's/placeholder-cropped.svg",
         items:{
             11:{
-                name:"simple",
+                name:"gaufre simple",
                 price:"450",
                 ing:""
             },
             12:{
-                name:"banane",
+                name:"gaufre banane",
                 price:"550",
                 ing:""
             },
             13:{
-                name:"fraise",
+                name:"gaufre fraise",
                 price:"550",
                 ing:""
             },
             14:{
-                name:"pistache",
+                name:"gaufre pistache",
                 price:"700",
                 ing:""
             },
             15:{
-                name:"lotus",
+                name:"gaufre lotus",
                 price:"700",
                 ing:""
             },
             16:{
-                name:"special",
+                name:"gaufre special",
                 price:"900",
                 ing:""
             }
