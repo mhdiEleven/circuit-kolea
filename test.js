@@ -98,54 +98,56 @@ const foods ={
             },
         }
     },
-    12:{//creps
+    12:{//crepes
         cat_name:"crepes",
         cat_img:"png's/placeholder-cropped.svg",
         items:  {
             11:{
-                name:"crepes simple",
-                ing:"cpeps ing",
+                name:"crepe simple",
+                ing:"",
                 price:350,
             
             },
             12:{
-                name:"crepes banana",
-                ing:"crepes ing",
+                name:"crepe a la banane",
+                ing:"",
                 price:450,
             },
             13:{
-                name:"crepes ananas",
-                ing:"crepes ing",
+                name:"crepe a la fraise",
+                ing:"",
                 price:550,
             },
             14:{
-                name:"crepes 2 fruts",
-                
-                ing:"crepes ing",
+                name:"crepe a l'ananas",
+                ing:"",
                 price:550,
             },
             15:{
-                name:"crepes pistachio",
-                
-                ing:"crepes ing",
-                price:600,
+                name:"crepe aux deux fruits",
+                ing:"",
+                price:550,
             },
             16:{
-                name:"crepes lotus",
-                
-                ing:"crepes ing",
+                name:"crepe a la pistache",
+                ing:"",
                 price:600,
             },
             17:{
-                name:"crepes 4choco",
-                
-                ing:"crepes ing",
-                price:800,
+                name:"crepe au lotus",
+                ing:"",
+                price:600,
             },
             18:{
-                name:"goufres",
-                img:""
+                name:"crepe aux quatre chocolats",
+                ing:"",
+                price:800,
             },
+            19:{
+                name:"crepe le circuit",
+                ing:"",
+                price:900,
+            }
 
         }
     },
@@ -159,34 +161,34 @@ const foods ={
                 ing:""
             },
             12:{
-                name:"gaufre banane",
+                name:"gaufre a la banane",
                 price:"550",
                 ing:""
             },
             13:{
-                name:"gaufre fraise",
+                name:"gaufre a la fraise",
                 price:"550",
                 ing:""
             },
             14:{
-                name:"gaufre pistache",
+                name:"gaufre a la pistache",
                 price:"700",
                 ing:""
             },
             15:{
-                name:"gaufre lotus",
+                name:"gaufre au lotus",
                 price:"700",
                 ing:""
             },
             16:{
-                name:"gaufre special",
+                name:"gaufre speciale",
                 price:"900",
                 ing:""
             }
         }
     },
-    14:{//bubble waffles
-        cat_name:"bubble waffles",
+    14:{//gaufres bubble
+        cat_name:"gaufres bubble",
         cat_img:"png's/placeholder-cropped.svg",
         items:{
             11:{
@@ -195,22 +197,22 @@ const foods ={
                 ing:""
             },
             12:{
-                name:"banane",
+                name:"a la banane",
                 price:"550",
                 ing:""
             },
             13:{
-                name:"fraise",
+                name:"a la fraise",
                 price:"550",
                 ing:""
             },
             14:{
-                name:"pistache",
+                name:"a la pistache",
                 price:"700",
                 ing:""
             },
             15:{
-                name:"lotus",
+                name:"au lotus",
                 price:"700",
                 ing:""
             },
@@ -221,8 +223,8 @@ const foods ={
             }
         }
     },
-    15:{//sweets
-        cat_name:"sweets",
+    15:{//desserts
+        cat_name:"desserts",
         cat_img:"png's/placeholder-cropped.svg",
         items:{
             11:{
@@ -251,7 +253,7 @@ const foods ={
                 ing:""
             },
             16:{
-                name:"cancake",
+                name:"pancakes",
                 price:"450",
                 ing:""
             },
@@ -261,7 +263,7 @@ const foods ={
                 ing:""
             },
             18:{
-                name:"sneakers",
+                name:"snickers",
                 price:"400",
                 ing:""
             }
