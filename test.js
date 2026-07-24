@@ -1,8 +1,10 @@
 const button = document.getElementById("lan-button");
-const paragraphs = document.querySelectorAll("p.tr,h2.tr,h1.tr");
+
 let eng = localStorage.getItem("eng") === "true";
 
-if (!eng) {
+function translate() {
+  let paragraphs = document.querySelectorAll("p.tr, h2.tr, h1.tr");
+
   paragraphs.forEach(function (p) {
     if (eng) {
       p.textContent = p.dataset.en;
@@ -11,18 +13,14 @@ if (!eng) {
     }
   });
 }
-console.log(eng);
+
+// Apply saved language when page loads
+translate();
+
 button.addEventListener("click", function () {
-  console.log(eng);
   eng = !eng;
   localStorage.setItem("eng", eng);
-  paragraphs.forEach(function (p) {
-    if (eng) {
-      p.textContent = p.dataset.en;
-    } else {
-      p.textContent = p.dataset.fr;
-    }
-  });
+  translate();
 });
 //Were going to call this the language MODUS
 //now were going into the dynamic
@@ -41,7 +39,7 @@ const foods = {
     //pizzas
     cat_name: "pizza",
     cat_img: "png's/product/pizza viande.png",
-    sup:["extra cheddar :150da","extra mozzarella :150da", "extra gruyère :150da" , "extra camembert :150da"],
+    sup:["extra cheddar :200da","extra mozzarella :200da", "extra gruyère :200da" , "extra camembert :200da"],
     //now the spesific products
     items: {
       11: {
@@ -97,6 +95,7 @@ const foods = {
 
         price: [850, 1700, 2600],
         ing: "sauce tomate, cheddar, mozzarella, saumon",
+        inge: "tomato sauce cheddar , mozzarzella , salmon"
       },
     },
   },
@@ -104,7 +103,7 @@ const foods = {
     //crepes
     cat_name: "crepes",
     cat_img: "png's/product/crepe deux fruits.png",
-    sup :["Mars:150da","Snickers:150da" , "kitkat:150da" , "Ferrero:150da" , "Raffaello:150da" , "beuno:150da","bounty:150da"],
+    sup :["Mars:200da","Snickers:200da" , "kitkat:200da" , "Ferrero:200da" , "Raffaello:200da" , "beuno:200da","bounty:200da"],
     items: {
       11: {
         name: "crepe simple",
@@ -157,7 +156,7 @@ const foods = {
     //gaufres
     cat_name: "gaufres",
     cat_img: "png's/product/gaufre speciale.png",
-    sup :["Mars:150da","Snickers:150da" , "kitkat:150da" , "Ferrero:150da" , "Raffaello:150da" , "beuno:150da","bounty:150da"],
+    sup :["Mars:200da","Snickers:200da" , "kitkat:200da" , "Ferrero:200da" , "Raffaello:200da" , "beuno:200da","bounty:200da"],
     items: {
       11: {
         name: "gaufre simple",
@@ -195,7 +194,7 @@ const foods = {
     //gaufres bubble
     cat_name: "bubble waffles",
     cat_img: "png's/product/bubble waffles fraise.png",
-    sup :["Mars:150da","Snickers:150da" , "kitkat:150da" , "Ferrero:150da" , "Raffaello:150da" , "beuno:150da","bounty:150da"],
+    sup :["Mars:200da","Snickers:200da" , "kitkat:200da" , "Ferrero:200da" , "Raffaello:200da" , "beuno:200da","bounty:200da"],
     items: {
       11: {
         name: "bubble waffles simple",
@@ -617,15 +616,15 @@ if (sp_id != 0) {
   
   if (item.ing) {
     greed.innerHTML += `<div>
-      <h2 class="title" id="delete">Ingrediants</h2> <p class="space" id="ingreed">${item.ing}</p>
+      <h2 class="title" id="delete">Ingrediants</h2> <p data-en="${(item.inge) ?  item.inge : item.ing}" data-fr="${item.ing}" class="space tr"  id="ingreed">${item.ing}</p>
     </div>`;
   }
   const price = document.getElementById("pricee");
   if (Array.isArray(item.price)) {
     butt.innerHTML = `
-          <input type="radio" name="group" id="s" value="0" checked><label for="s">small</label>
-          <input type="radio" name="group" id="m" value="1"><label for="m">medium</label>
-          <input type="radio" name="group" id="l"  value="2"><label for="l">large</label> `;
+          <input type="radio" name="group" id="s" value="0" checked><label for="s">medium</label>
+          <input type="radio" name="group" id="m" value="1"><label for="m">large</label>
+          <input type="radio" name="group" id="l"  value="2"><label for="l">Xlarge</label> `;
     const selected = document.querySelectorAll('input[name="group"]');
     price.innerHTML = item.price[0] + "da";
     selected.forEach(function (r) {
@@ -639,11 +638,14 @@ if (sp_id != 0) {
     price.innerHTML = item.price + "da";
   }
 } 
-sub_menu.innerHTML += `        <hr class="devide color">
-        <footer>
-      
-      <a href="https://www.instagram.com/le.circuit/"><img src="png's/instagram-outline-svgrepo-com.svg" class="small"></a>
-      <a href="https://www.facebook.com/people/Le-Circuit/61587492091959/"><img src="png's/facebook-outline-svgrepo-com.svg" class="small"></a>
-      <a href="https://www.tiktok.com/@le.circuit42"><img src="png's/tiktok-outline-svgrepo-com.svg" class="small"></a>
-    </footer>
-    <p>contact us  <a href="tel:0555075637"></a>:0555075637</p>`;
+if(sub_menu){
+  sub_menu.innerHTML += `        <hr class="devide color">
+          <footer>
+        
+        <a href="https://www.instagram.com/le.circuit/"><img src="png's/instagram-outline-svgrepo-com.svg" class="small"></a>
+        <a href="https://www.facebook.com/people/Le-Circuit/61587492091959/"><img src="png's/facebook-outline-svgrepo-com.svg" class="small"></a>
+        <a href="https://www.tiktok.com/@le.circuit42"><img src="png's/tiktok-outline-svgrepo-com.svg" class="small"></a>
+      </footer>
+      <p>contact us  <a href="tel:0778762465"></a>:0778762465</p>`;
+
+}
