@@ -103,7 +103,7 @@ const foods = {
   12: {//crepe
     //crepes
     cat_name: "crepes",
-    cat_img: "png's/placeholder-cropped.svg",
+    cat_img: "png's/product/crepe deux fruits.png",
     sup :["Mars:150da","Snickers:150da" , "kitkat:150da" , "Ferrero:150da" , "Raffaello:150da" , "beuno:150da","bounty:150da"],
     items: {
       11: {
@@ -156,7 +156,7 @@ const foods = {
   13: {// waffles
     //gaufres
     cat_name: "gaufres",
-    cat_img: "png's/placeholder-cropped.svg",
+    cat_img: "png's/product/gaufre speciale.png",
     sup :["Mars:150da","Snickers:150da" , "kitkat:150da" , "Ferrero:150da" , "Raffaello:150da" , "beuno:150da","bounty:150da"],
     items: {
       11: {
@@ -194,7 +194,7 @@ const foods = {
   14: {//bubble waffes
     //gaufres bubble
     cat_name: "bubble waffles",
-    cat_img: "png's/placeholder-cropped.svg",
+    cat_img: "png's/product/bubble waffles fraise.png",
     sup :["Mars:150da","Snickers:150da" , "kitkat:150da" , "Ferrero:150da" , "Raffaello:150da" , "beuno:150da","bounty:150da"],
     items: {
       11: {
@@ -232,7 +232,7 @@ const foods = {
   15: {//desserts
     //desserts
     cat_name: "desserts",
-    cat_img: "png's/placeholder-cropped.svg",
+    cat_img: "png's/product/tiramisu.png",
     items: {
       11: {
         name: "jazz",
