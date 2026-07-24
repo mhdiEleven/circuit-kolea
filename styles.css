@@ -370,7 +370,7 @@ label{
   margin-left: 10%;
   display: block !important;
   text-align: left;
-  font-size: 35px;
+  font-size: 5vw;
 }
 .bio{
   color:white;
@@ -398,7 +398,7 @@ label{
   margin-left: 25%;
   display: block !important;
   text-align: left;
-  font-size: 60px;
+  font-size: 2.5vw;
 }
 @media (width<600px) {
   .equal{
@@ -454,7 +454,7 @@ label{
     margin-left: 25%;
     display: block !important;
     text-align: left;
-    font-size: 35px;
+    font-size: 5vw;
   }
   .logo{
     display: none;

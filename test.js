@@ -40,7 +40,7 @@ const foods = {
   11: {//pizza
     //pizzas
     cat_name: "pizza",
-    cat_img: "png's/product/pizza viend.png",
+    cat_img: "png's/product/pizza viande.png",
     sup:["extra cheddar :150da","extra mozzarella :150da", "extra gruyère :150da" , "extra camembert :150da"],
     //now the spesific products
     items: {
@@ -112,37 +112,37 @@ const foods = {
         price: 350,
       },
       12: {
-        name: "crepe a la banane",
+        name: "crepe banane",
         ing: "",
         price: 450,
       },
       13: {
-        name: "crepe a la fraise",
+        name: "crepe fraise",
         ing: "",
         price: 550,
       },
       14: {
-        name: "crepe a l'ananas",
+        name: "crepe ananas",
         ing: "",
         price: 550,
       },
       15: {
-        name: "crepe aux deux fruits",
+        name: "crepe deux fruits",
         ing: "",
         price: 550,
       },
       16: {
-        name: "crepe a la pistache",
+        name: "crepe pistache",
         ing: "",
         price: 600,
       },
       17: {
-        name: "crepe au lotus",
+        name: "crepe lotus",
         ing: "",
         price: 600,
       },
       18: {
-        name: "crepe aux quatre chocolats",
+        name: "crepe quatre chocolats",
         ing: "",
         price: 800,
       },
@@ -165,22 +165,22 @@ const foods = {
         ing: "",
       },
       12: {
-        name: "gaufre a la banane",
+        name: "gaufre banane",
         price: "550",
         ing: "",
       },
       13: {
-        name: "gaufre a la fraise",
+        name: "gaufre fraise",
         price: "550",
         ing: "",
       },
       14: {
-        name: "gaufre a la pistache",
+        name: "gaufre pistache",
         price: "700",
         ing: "",
       },
       15: {
-        name: "gaufre au lotus",
+        name: "gaufre lotus",
         price: "700",
         ing: "",
       },
@@ -254,11 +254,7 @@ const foods = {
         price: "300",
         ing: "",
       },
-      15: {
-        name: "flan",
-        price: "200",
-        ing: "",
-      },
+
       17: {
         name: "crunchy",
         price: "450",
