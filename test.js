@@ -37,11 +37,11 @@ const container = document.getElementById("drinkie");
 const container1 = document.getElementById("foodie");
 
 const foods = {
-  11: {
+  11: {//pizza
     //pizzas
     cat_name: "pizza",
     cat_img: "png's/product/pizza viend.png",
-    sup:["extra cheese :150da","extra shit : 1 billion dollars"],
+    sup:["extra cheddar :150da","extra mozzarella :150da", "extra gruyère :150da" , "extra camembert :150da"],
     //now the spesific products
     items: {
       11: {
@@ -78,7 +78,7 @@ const foods = {
         name: "pizza végétarienne",
 
         price: [750, 1600, 2300],
-        ing: "sauce tomate, cheddar, mozzarella, grillé, camembert",
+        ing: "sauce tomate, cheddar, mozzarella, champignons, oignon, olives, poivron rouge",
       },
       17: {
         name: "pizza pepperoni",
@@ -100,10 +100,11 @@ const foods = {
       },
     },
   },
-  12: {
+  12: {//crepe
     //crepes
     cat_name: "crepes",
     cat_img: "png's/placeholder-cropped.svg",
+    sup :["Mars:150da","Snickers:150da" , "kitkat:150da" , "Ferrero:150da" , "Raffaello:150da" , "beuno:150da","bounty:150da"],
     items: {
       11: {
         name: "crepe simple",
@@ -152,10 +153,11 @@ const foods = {
       },
     },
   },
-  13: {
+  13: {// waffles
     //gaufres
     cat_name: "gaufres",
     cat_img: "png's/placeholder-cropped.svg",
+    sup :["Mars:150da","Snickers:150da" , "kitkat:150da" , "Ferrero:150da" , "Raffaello:150da" , "beuno:150da","bounty:150da"],
     items: {
       11: {
         name: "gaufre simple",
@@ -189,33 +191,34 @@ const foods = {
       },
     },
   },
-  14: {
+  14: {//bubble waffes
     //gaufres bubble
-    cat_name: "gaufres bubble",
+    cat_name: "bubble waffles",
     cat_img: "png's/placeholder-cropped.svg",
+    sup :["Mars:150da","Snickers:150da" , "kitkat:150da" , "Ferrero:150da" , "Raffaello:150da" , "beuno:150da","bounty:150da"],
     items: {
       11: {
-        name: "simple",
+        name: "bubble waffles simple",
         price: "450",
         ing: "",
       },
       12: {
-        name: "a la banane",
+        name: "bubble waffles banane",
         price: "550",
         ing: "",
       },
       13: {
-        name: "a la fraise",
+        name: "bubble waffles fraise",
         price: "550",
         ing: "",
       },
       14: {
-        name: "a la pistache",
+        name: "bubble waffles pistache",
         price: "700",
         ing: "",
       },
       15: {
-        name: "au lotus",
+        name: "bubble waffles lotus",
         price: "700",
         ing: "",
       },
@@ -226,7 +229,7 @@ const foods = {
       },
     },
   },
-  15: {
+  15: {//desserts
     //desserts
     cat_name: "desserts",
     cat_img: "png's/placeholder-cropped.svg",
@@ -256,11 +259,6 @@ const foods = {
         price: "200",
         ing: "",
       },
-      16: {
-        name: "pancakes",
-        price: "450",
-        ing: "",
-      },
       17: {
         name: "crunchy",
         price: "450",
@@ -273,7 +271,7 @@ const foods = {
       },
     },
   },
-  50: {
+  50: {//coffe
     //coffee
     cat_name: "Coffee",
     cat_img: "png's/product/coffee latte.png",
@@ -296,48 +294,53 @@ const foods = {
 
         ing: "",
       },
-      14: {
+      14:{
+        name:"caps gourmand",
+        price:"150",
+        ing:""
+      },
+      15: {
         name: "iced coffee",
         price: "350",
 
         ing: "nesscoffee , sugar",
       },
-      15: {
+      16: {
         name: "cappuccino italiano",
         price: "350",
 
         ing: "coffee milk sugar (caramell /vanilla / chocolate) ",
       },
-      16: {
+      17: {
         name: "Lait au chocolat",
         price: "80",
 
         ing: "milk , choco pwder",
       },
-      17: {
+      18: {
         name: "affogato",
         price: "450",
 
         ing: "ice cream + coffee",
       },
-      18: {
+      19: {
         name: "coffee latte",
         price: "350",
         ing: "consentrated milk coffee milk",
       },
-      19: {
+      20: {
         name: "iced latte",
         price: "350",
         ing: "",
       },
-      20: {
+      21: {
         name: "turkish coffee",
         price: "350",
         ing: "",
       },
     },
   },
-  51: {
+  51: {//moktails
     //moktails
     cat_name: "moktails",
     cat_img: "png's/product/pink lady.png",
@@ -380,7 +383,7 @@ const foods = {
       },
     },
   },
-  52: {
+  52: {//jus
     //jus
     cat_name: "jus",
     cat_img: "png's/product/jus fraise.png",
@@ -428,7 +431,7 @@ const foods = {
     },
   },
 
-  53: {
+  53: {//frappuccino
     //frappuccino
     cat_name: "frappuccino",
     cat_img: "png's/product/frappuccino fraise.png",
@@ -450,7 +453,7 @@ const foods = {
       },
     },
   },
-  54: {
+  54: {//mojitos
     //mojitos
     cat_name: "mojitos",
     cat_img: "png's/product/mojito fraise.png",
@@ -487,7 +490,7 @@ const foods = {
       },
     },
   },
-  55: {
+  55: {//milkshakes
     //milkshakes
     cat_name: "milkshakes",
     cat_img: "png's/product/milkshake fraise banane.png",
@@ -536,8 +539,7 @@ const foods = {
     },
   },
 
-  //WARNING EVERYTHING ABOVE IS DRINKS
-  //EVERYTHING BELOW IS FOODS
+
 };
 
 const sub_menu = document.getElementById("subby");
@@ -606,18 +608,21 @@ if (sp_id != 0) {
   const greed = document.getElementById("ingreed");
 
   if(foods[cat_id].sup){
-    let html = `<h2 class="title">supplument</h2>`
+    let html = `<div class = "equal"><h2 class="title">supplements</h2>`
     for (let x of foods[cat_id].sup){
         html += `<p class="space" id="ingreed">${x}</p>`
     }
+    html += `</div>`
     greed.innerHTML = html
   }
   
 
-  greed.innerHTML += `<h2 class="title" id="delete">Ingrediants</h2> <p class="space" id="ingreed">${item.ing}</p>`;
   
-  if (!item.ing) {
-    del.remove();
+  
+  if (item.ing) {
+    greed.innerHTML += `<div>
+      <h2 class="title" id="delete">Ingrediants</h2> <p class="space" id="ingreed">${item.ing}</p>
+    </div>`;
   }
   const price = document.getElementById("pricee");
   if (Array.isArray(item.price)) {
