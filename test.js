@@ -1,5 +1,5 @@
 const button = document.getElementById("lan-button");
-
+console.log(button)
 let eng = localStorage.getItem("eng") === "true";
 
 function translate() {
@@ -11,17 +11,18 @@ function translate() {
     } else {
       p.textContent = p.dataset.fr;
     }
-  });
+  },true);
 }
-
 // Apply saved language when page loads
 translate();
-
 button.addEventListener("click", function () {
+  console.log('clicked')
   eng = !eng;
   localStorage.setItem("eng", eng);
   translate();
 });
+
+
 //Were going to call this the language MODUS
 //now were going into the dynamic
 
@@ -44,58 +45,57 @@ const foods = {
     items: {
       11: {
         name: "pizza classique",
-
         price: [500, 1000, 1500],
         ing: "sauce tomate, cheddar, mozzarella",
+        inge: "tomato sauce, cheddar, mozzarella"
       },
       12: {
         name: "pizza thon",
-
         price: [650, 1400, 2000],
         ing: "sauce tomate, cheddar, mozzarella, thon",
+        inge: "tomato sauce, cheddar, mozzarella, tuna"
       },
       13: {
         name: "pizza viande",
-
         price: [700, 1500, 2200],
         ing: "sauce tomate, cheddar, mozzarella, viande",
+        inge: "tomato sauce, cheddar, mozzarella, meat"
       },
       14: {
         name: "pizza poulet fumé",
-
         price: [700, 1500, 2200],
         ing: "sauce tomate, cheddar, mozzarella, poulet fumé",
+        inge: "tomato sauce, cheddar, mozzarella, smoked chicken"
       },
       15: {
         name: "pizza dinde fumée",
-
         price: [800, 1600, 2500],
         ing: "sauce tomate, cheddar, mozzarella, dinde fumée",
+        inge: "tomato sauce, cheddar, mozzarella, smoked turkey"
       },
       16: {
         name: "pizza végétarienne",
-
         price: [750, 1600, 2300],
         ing: "sauce tomate, cheddar, mozzarella, champignons, oignon, olives, poivron rouge",
+        inge: "tomato sauce, cheddar, mozzarella, mushrooms, onion, olives, red pepper"
       },
       17: {
         name: "pizza pepperoni",
-
         price: [800, 1600, 2500],
         ing: "sauce tomate, cheddar, mozzarella, pepperoni",
+        inge: "tomato sauce, cheddar, mozzarella, pepperoni"
       },
       18: {
         name: "pizza quatre fromages",
-
         price: [800, 1600, 2500],
         ing: "sauce tomate, cheddar, mozzarella, gruyère, camembert",
+        inge: "tomato sauce, cheddar, mozzarella, gruyere, camembert"
       },
       19: {
         name: "pizza saumon",
-
         price: [850, 1700, 2600],
         ing: "sauce tomate, cheddar, mozzarella, saumon",
-        inge: "tomato sauce cheddar , mozzarzella , salmon"
+        inge: "tomato sauce, cheddar, mozzarella, salmon"
       },
     },
   },
@@ -275,13 +275,13 @@ const foods = {
         name: "coffee press",
         price: "50",
 
-        ing: "coffee powder , water",
+        ing: "",
       },
       12: {
         name: "coffee caps",
         price: "150",
 
-        ing: "coffee , cups , chosen flavor's",
+        ing: "",
       },
       13: {
         name: "coffee l'or",
@@ -528,6 +528,7 @@ const foods = {
 
       18: {
         name: "milkshake pistache",
+        namee: "hi",
         price: "700",
         ing: "",
       },
@@ -539,6 +540,7 @@ const foods = {
 
 const sub_menu = document.getElementById("subby");
 if (container) {
+  console.log("were in a container")
   Object.keys(foods).forEach(function (p) {
     const cat = foods[p];
     if (p < 50) {
@@ -572,7 +574,7 @@ if (sub_menu) {
       html += `
                 <a href="product.html?id=${p + id}" class="prod1"><div class="area1">
                     <img src="png's/product/${thingy.name}.png">
-                    <p class ="growable">${thingy.name}</p>
+                    <p class ="growable tr" data-fr = "${thingy.name}"data-en="${(thingy.namee)?thingy.namee:thingy.name}">${thingy.name}</p>
                 </div> </a>
         `;
     });
@@ -583,7 +585,17 @@ if (sub_menu) {
   console.log("pos" + idd);
   document.getElementById("pos" + idd).scrollIntoView();
 }
+if(sub_menu){
+  sub_menu.innerHTML += `        <hr class="devide color">
+          <footer>
+        
+        <a href="https://www.instagram.com/le.circuit/"><img src="png's/instagram-outline-svgrepo-com.svg" class="small"></a>
+        <a href="https://www.facebook.com/people/Le-Circuit/61587492091959/"><img src="png's/facebook-outline-svgrepo-com.svg" class="small"></a>
+        <a href="https://www.tiktok.com/@le.circuit42"><img src="png's/tiktok-outline-svgrepo-com.svg" class="small"></a>
+      </footer>
+      <p>contact us  <a href="tel:0778762465"></a>:0778762465</p>`;
 
+}
 const cat_id = idd % 100;
 const sp_id = Math.floor(idd / 100);
 console.log(cat_id);
@@ -597,7 +609,7 @@ if (sp_id != 0) {
   const product_img = document.getElementById("prod");
   product_img.innerHTML = `<img src="png's/product/${item.name}.png">
           <div class="group">
-        <p class="product-name" id="title">${item.name}</p>
+        <p class="product-name tr" id="title" data-fr="${item.name}" data-en="${(item.namee)?item.namee:item.name}">${item.name}</p>
         
       </div>`;
   const greed = document.getElementById("ingreed");
@@ -638,14 +650,5 @@ if (sp_id != 0) {
     price.innerHTML = item.price + "da";
   }
 } 
-if(sub_menu){
-  sub_menu.innerHTML += `        <hr class="devide color">
-          <footer>
-        
-        <a href="https://www.instagram.com/le.circuit/"><img src="png's/instagram-outline-svgrepo-com.svg" class="small"></a>
-        <a href="https://www.facebook.com/people/Le-Circuit/61587492091959/"><img src="png's/facebook-outline-svgrepo-com.svg" class="small"></a>
-        <a href="https://www.tiktok.com/@le.circuit42"><img src="png's/tiktok-outline-svgrepo-com.svg" class="small"></a>
-      </footer>
-      <p>contact us  <a href="tel:0778762465"></a>:0778762465</p>`;
 
-}
+translate();

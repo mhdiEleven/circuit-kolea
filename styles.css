@@ -14,9 +14,13 @@ a:visited,a:link{
 
   color:#093514;
 }
+
 input{
   width :2vw;
   height: 2vw;
+}
+* {
+  pointer-events: auto !important;
 }
 .prod{
   margin-bottom: 20px;
