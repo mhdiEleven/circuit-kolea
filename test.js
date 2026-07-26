@@ -3,7 +3,7 @@ console.log(button)
 let eng = localStorage.getItem("eng") === "true";
 
 function translate() {
-  let paragraphs = document.querySelectorAll("p.tr, h2.tr, h1.tr");
+  let paragraphs = document.querySelectorAll("p.tr, h2.tr, h1.tr ");
 
   paragraphs.forEach(function (p) {
     if (eng) {
