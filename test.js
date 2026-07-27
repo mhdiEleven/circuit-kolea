@@ -45,37 +45,37 @@ const foods = {
     items: {
       11: {
         name: "pizza classique",
-        price: [500, 1000, 1500],
+        price: [550, 1100, 1500],
         ing: "sauce tomate, cheddar, mozzarella",
         inge: "tomato sauce, cheddar, mozzarella"
       },
       12: {
         name: "pizza thon",
-        price: [650, 1400, 2000],
+        price: [700, 1400, 2000],
         ing: "sauce tomate, cheddar, mozzarella, thon",
         inge: "tomato sauce, cheddar, mozzarella, tuna"
       },
       13: {
         name: "pizza viande",
-        price: [700, 1500, 2200],
+        price: [800, 1500, 2400],
         ing: "sauce tomate, cheddar, mozzarella, viande",
         inge: "tomato sauce, cheddar, mozzarella, meat"
       },
       14: {
         name: "pizza poulet fumé",
-        price: [700, 1500, 2200],
+        price: [800, 1500, 2400],
         ing: "sauce tomate, cheddar, mozzarella, poulet fumé",
         inge: "tomato sauce, cheddar, mozzarella, smoked chicken"
       },
       15: {
         name: "pizza dinde fumée",
-        price: [800, 1600, 2500],
+        price: [900, 1700, 2600],
         ing: "sauce tomate, cheddar, mozzarella, dinde fumée",
         inge: "tomato sauce, cheddar, mozzarella, smoked turkey"
       },
       16: {
         name: "pizza végétarienne",
-        price: [750, 1600, 2300],
+        price: [800, 1600, 2500],
         ing: "sauce tomate, cheddar, mozzarella, champignons, oignon, olives, poivron rouge",
         inge: "tomato sauce, cheddar, mozzarella, mushrooms, onion, olives, red pepper"
       },
@@ -93,7 +93,7 @@ const foods = {
       },
       19: {
         name: "pizza saumon",
-        price: [850, 1700, 2600],
+        price: [900, 1800, 2600],
         ing: "sauce tomate, cheddar, mozzarella, saumon",
         inge: "tomato sauce, cheddar, mozzarella, salmon"
       },
@@ -245,7 +245,7 @@ const foods = {
       },
       13: {
         name: "tiramisu",
-        price: "500",
+        price: "450",
         ing: "",
       },
       14: {
@@ -390,32 +390,32 @@ const foods = {
       },
       12: {
         name: "jus citron",
-        price: "400",
+        price: "450",
         ing: "",
       },
       13: {
         name: "jus fraise",
-        price: "400",
+        price: "450",
         ing: "",
       },
       14: {
         name: "jus banane",
-        price: "400",
+        price: "450",
         ing: "",
       },
       15: {
         name: "jus de pomme",
-        price: "450",
+        price: "500",
         ing: "",
       },
       16: {
         name: "jus peche",
-        price: "400",
+        price: "450",
         ing: "",
       },
       17: {
         name: "jus ananas",
-        price: "500",
+        price: "600",
         ing: "",
       },
       18: {
@@ -490,15 +490,25 @@ const foods = {
     cat_name: "milkshakes",
     cat_img: "png's/product/milkshake fraise banane.png",
     items: {
+
       11: {
         name: "milkshake nutella",
-        price: "450",
+        price: "550",
         ing: "",
       },
-      49: {
+      48: {
         name: "milkshake nutella banane",
         price: "550",
         ing: "",
+      },
+      49:{
+        name: "milkshake choco",
+        price:"450",
+        ing: "",
+      },
+      50:{
+        name:"milkshake choco banane",
+        price : "500"
       },
       12: {
         name: "milkshake fraise banane",
@@ -528,7 +538,6 @@ const foods = {
 
       18: {
         name: "milkshake pistache",
-        namee: "hi",
         price: "700",
         ing: "",
       },
