@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
 body {
-  font-family: 'Playfair Display','Poppins' ;
+  font-family: 'Poppins' ;
   padding: 0;
   margin:0;
   background-color: beige;
@@ -9,6 +9,10 @@ body {
 }
 .color{
   background-color: beige;
+}
+.orange{
+  color: #093514;
+
 }
 a:visited,a:link{
 

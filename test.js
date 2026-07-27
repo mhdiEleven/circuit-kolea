@@ -584,6 +584,7 @@ if (sub_menu) {
                 <a href="product.html?id=${p + id}" class="prod1"><div class="area1">
                     <img src="png's/product/${thingy.name}.png">
                     <p class ="growable tr" data-fr = "${thingy.name}"data-en="${(thingy.namee)?thingy.namee:thingy.name}">${thingy.name}</p>
+                    <p class = "orange">${(Array.isArray(thingy.price))?thingy.price[0]:thingy.price} da</p>
                 </div> </a>
         `;
     });
