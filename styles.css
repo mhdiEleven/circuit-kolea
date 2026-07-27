@@ -325,7 +325,7 @@ hr{
 }
 .area1 img{
   
-
+  margin-left: 20px;
   
   width: 20%;
 }
@@ -431,6 +431,7 @@ label{
   .area1 img{
 
     justify-self: center;
+    margin-left: 0;
     width: 100px;
   }
   .grid-container{
