@@ -643,9 +643,9 @@ if (sp_id != 0) {
   const price = document.getElementById("pricee");
   if (Array.isArray(item.price)) {
     butt.innerHTML = `
-          <input type="radio" name="group" id="s" value="0" checked><label for="s">medium</label>
-          <input type="radio" name="group" id="m" value="1"><label for="m">large</label>
-          <input type="radio" name="group" id="l"  value="2"><label for="l">Xlarge</label> `;
+          <input type="radio" name="group" id="s" value="0" checked><label for="s">Large</label>
+          <input type="radio" name="group" id="m" value="1"><label for="m">Semi</label>
+          <input type="radio" name="group" id="l"  value="2"><label for="l">Mega</label> `;
     const selected = document.querySelectorAll('input[name="group"]');
     price.innerHTML = item.price[0] + "da";
     selected.forEach(function (r) {

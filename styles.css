@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
 body {
-  font-family: 'Poppins', 'Inter', sans-serif;
+  font-family: 'Inter','Poppins' ;
   padding: 0;
   margin:0;
   background-color: beige;
@@ -403,6 +403,14 @@ label{
   font-size: 2.5vw;
 }
 @media (width<600px) {
+  input{
+    width :4vw;
+    height: 4vw;
+  }
+  label{
+    color: white;
+    font-size: 6vw;
+    }
   .equal{
     width: 100%;
   }
