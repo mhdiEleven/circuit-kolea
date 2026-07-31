@@ -329,10 +329,11 @@ hr{
   font-size: 3vw;
 }
 .area1 img{
-  
+  width: 100px;
+  height: 100px;
   margin-left: 20px;
   
-  width: 20%;
+
 }
 .cent p{
   display: flex;

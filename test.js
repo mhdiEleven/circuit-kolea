@@ -47,7 +47,8 @@ const foods = {
         name: "pizza classique",
         price: [550, 1100, 1500],
         ing: "sauce tomate, cheddar, mozzarella",
-        inge: "tomato sauce, cheddar, mozzarella"
+        inge: "tomato sauce, cheddar, mozzarella",
+        show: true
       },
       12: {
         name: "pizza thon",
@@ -107,47 +108,38 @@ const foods = {
     items: {
       11: {
         name: "crepe simple",
-        ing: "",
         price: 350,
       },
       12: {
         name: "crepe banane",
-        ing: "",
         price: 450,
       },
       13: {
         name: "crepe fraise",
-        ing: "",
         price: 550,
       },
       14: {
         name: "crepe ananas",
-        ing: "",
         price: 550,
       },
       15: {
         name: "crepe deux fruits",
-        ing: "",
         price: 550,
       },
       16: {
         name: "crepe pistache",
-        ing: "",
         price: 600,
       },
       17: {
         name: "crepe lotus",
-        ing: "",
         price: 600,
       },
       18: {
         name: "crepe quatre chocolats",
-        ing: "",
         price: 800,
       },
       19: {
         name: "crepe le circuit",
-        ing: "",
         price: 900,
       },
     },
@@ -160,33 +152,27 @@ const foods = {
     items: {
       11: {
         name: "gaufre simple",
-        price: "450",
-        ing: "",
+        price: "450"
       },
       12: {
         name: "gaufre banane",
-        price: "550",
-        ing: "",
+        price: "550"
       },
       13: {
         name: "gaufre fraise",
-        price: "550",
-        ing: "",
+        price: "550"
       },
       14: {
         name: "gaufre pistache",
-        price: "700",
-        ing: "",
+        price: "700"
       },
       15: {
         name: "gaufre lotus",
-        price: "700",
-        ing: "",
+        price: "700"
       },
       16: {
         name: "gaufre speciale",
-        price: "900",
-        ing: "",
+        price: "900"
       },
     },
   },
@@ -198,33 +184,27 @@ const foods = {
     items: {
       11: {
         name: "bubble waffles simple",
-        price: "450",
-        ing: "",
+        price: "450"
       },
       12: {
         name: "bubble waffles banane",
-        price: "550",
-        ing: "",
+        price: "550"
       },
       13: {
         name: "bubble waffles fraise",
-        price: "550",
-        ing: "",
+        price: "550"
       },
       14: {
         name: "bubble waffles pistache",
-        price: "700",
-        ing: "",
+        price: "700"
       },
       15: {
         name: "bubble waffles lotus",
-        price: "700",
-        ing: "",
+        price: "700"
       },
       16: {
         name: "le circuit",
-        price: "900",
-        ing: "",
+        price: "900"
       },
     },
   },
@@ -235,36 +215,91 @@ const foods = {
     items: {
       11: {
         name: "jazz",
-        price: "400",
-        ing: "",
+        price: "400"
       },
       12: {
         name: "cheesecake",
-        price: "500",
-        ing: "",
+        price: "500"
       },
       13: {
         name: "tiramisu",
-        price: "450",
-        ing: "",
+        price: "450"
       },
       14: {
         name: "brownies",
-        price: "300",
-        ing: "",
+        price: "300"
       },
 
       17: {
         name: "crunchy",
-        price: "450",
-        ing: "",
+        price: "450"
       },
       18: {
         name: "snickers",
-        price: "400",
-        ing: "",
+        price: "400"
       },
     },
+  },
+  16: { // bakeries
+    cat_name: "viennoiseries",
+    cat_img: "",
+    items: {
+      11: {
+        name:"Croissant",
+        sup:["fourer au chocolate : 100da"],
+        price:"50"
+      },
+      12:{
+        name:"croissant au butter",
+        sup:["fourer au chocolate : 150da"],
+        price:"100"
+      },
+      13:{
+        name: "Pain au Chocolat",
+        price: "50"
+      },
+      14:{
+        name:"Pain au Raisins",
+        price: "contact the dev",
+        show: false
+      },
+      15:{
+        name:"Pain suisse",
+        price: "100"
+      },
+      16:{
+        name:"Napolitaine",
+        price:"contact",
+        show:false
+      },
+      17:{
+        name:"Torsade",
+        price: "contact",
+        show:false
+      },
+      18:{
+        name:"Chausson",
+        price:"120",
+        ing:'',
+        sup:["promenade/amand/les duex"]
+
+      },
+      19:{
+        name:"Grillagé pomme amande",
+        price: "contact",
+        show:false
+      },
+      20:{
+        name:"Triangle aux Amandes",
+        price:"120",
+
+      },
+      21:{
+        name:"Grillagé",
+        price: "120",
+      }
+    },
+
   },
   50: {//coffe
     //coffee
@@ -274,25 +309,18 @@ const foods = {
       11: {
         name: "coffee press",
         price: "50",
-
-        ing: "",
       },
       12: {
         name: "coffee caps",
         price: "150",
-
-        ing: "",
       },
       13: {
         name: "coffee l'or",
         price: "250",
-
-        ing: "",
       },
       14:{
         name:"caps gourmand",
         price:"150",
-        ing:""
       },
       15: {
         name: "iced coffee",
@@ -325,13 +353,11 @@ const foods = {
       },
       20: {
         name: "iced latte",
-        price: "350",
-        ing: "",
+        price: "350"
       },
       21: {
         name: "turkish coffee",
-        price: "350",
-        ing: "",
+        price: "350"
       },
     },
   },
@@ -343,38 +369,26 @@ const foods = {
       11: {
         name: "pink lady",
         price: "500",
-
-        ing: "",
       },
       12: {
         name: "borabora",
         price: "450",
-
-        ing: "",
       },
       13: {
         name: "blue star",
         price: "450",
-
-        ing: "",
       },
       14: {
         name: "blue hawai",
         price: "500",
-
-        ing: "",
       },
       15: {
         name: "pina colada",
         price: "500",
-
-        ing: "",
       },
       16: {
         name: "hawai",
         price: "500",
-
-        ing: "",
       },
     },
   },
@@ -385,43 +399,35 @@ const foods = {
     items: {
       11: {
         name: "jus doronge",
-        price: "400",
-        ing: "",
+        price: "400"
       },
       12: {
         name: "jus citron",
-        price: "450",
-        ing: "",
+        price: "450"
       },
       13: {
         name: "jus fraise",
-        price: "450",
-        ing: "",
+        price: "450"
       },
       14: {
         name: "jus banane",
-        price: "450",
-        ing: "",
+        price: "450"
       },
       15: {
         name: "jus de pomme",
-        price: "500",
-        ing: "",
+        price: "500"
       },
       16: {
         name: "jus peche",
-        price: "450",
-        ing: "",
+        price: "450"
       },
       17: {
         name: "jus ananas",
-        price: "600",
-        ing: "",
+        price: "600"
       },
       18: {
         name: "jus cocktail",
-        price: "450",
-        ing: "",
+        price: "450"
       },
     },
   },
@@ -433,18 +439,15 @@ const foods = {
     items: {
       11: {
         name: "frappuccino fraise",
-        price: "450",
-        ing: "",
+        price: "450"
       },
       12: {
         name: "frappuccino nutella",
-        price: "550",
-        ing: "",
+        price: "550"
       },
       13: {
         name: "frappuccino caramel",
-        price: "450",
-        ing: "",
+        price: "450"
       },
     },
   },
@@ -455,33 +458,27 @@ const foods = {
     items: {
       11: {
         name: "mojito classique",
-        price: "400",
-        ing: "",
+        price: "400"
       },
       12: {
         name: "mojito fraise",
-        price: "450",
-        ing: "",
+        price: "450"
       },
       13: {
         name: "mojito blue",
-        price: "450",
-        ing: "",
+        price: "450"
       },
       14: {
         name: "mojito vegetarian",
-        price: "450",
-        ing: "",
+        price: "450"
       },
       15: {
         name: "mojito kiwi",
-        price: "550",
-        ing: "",
+        price: "550"
       },
       16: {
         name: "mojito noix de coco",
-        price: "600",
-        ing: "",
+        price: "600"
       },
     },
   },
@@ -493,18 +490,15 @@ const foods = {
 
       11: {
         name: "milkshake nutella",
-        price: "550",
-        ing: "",
+        price: "550"
       },
       48: {
         name: "milkshake nutella banane",
-        price: "550",
-        ing: "",
+        price: "550"
       },
       49:{
         name: "milkshake choco",
-        price:"450",
-        ing: "",
+        price:"450"
       },
       50:{
         name:"milkshake choco banane",
@@ -512,34 +506,28 @@ const foods = {
       },
       12: {
         name: "milkshake fraise banane",
-        price: "550",
-        ing: "",
+        price: "550"
       },
       13: {
         name: "milkshake ferrero",
-        price: "700",
-        ing: "",
+        price: "700"
       },
       14: {
         name: "milkshake snickers",
-        price: "650",
-        ing: "",
+        price: "650"
       },
       15: {
         name: "milkshake lotus",
-        price: "700",
-        ing: "",
+        price: "700"
       },
       16: {
         name: "milkshake bounty",
-        price: "700",
-        ing: "",
+        price: "700"
       },
 
       18: {
         name: "milkshake pistache",
-        price: "700",
-        ing: "",
+        price: "700"
       },
     },
   },
@@ -576,18 +564,21 @@ const idd = params.get("id");
 
 if (sub_menu) {
   Object.keys(foods).forEach(function (id) {
+    
     sub_menu.innerHTML += `<h1 class="type" id="pos${id}">${foods[id].cat_name}</h1>`;
     let html = `<div class="grid-container1">`;
     Object.keys(foods[id].items).forEach(function (p) {
-      let thingy = foods[id].items[p];
-      html += `
-                <a href="product.html?id=${p + id}" class="prod1"><div class="area1">
-                    <img src="png's/product/${thingy.name}.png">
-                    <p class ="growable tr" data-fr = "${thingy.name}"data-en="${(thingy.namee)?thingy.namee:thingy.name}">${thingy.name}</p>
-                    <p class = "orange">${(Array.isArray(thingy.price))?thingy.price[0]:thingy.price} da</p>
-                </div> </a>
-        `;
-    });
+      if (foods[id].items[p].show !== false){
+        let thingy = foods[id].items[p];
+        html += `
+                  <a href="product.html?id=${p + id}" class="prod1"><div class="area1">
+                      <img src="png's/product/${thingy.name}.png">
+                      <p class ="growable tr" data-fr = "${thingy.name}"data-en="${(thingy.namee)?thingy.namee:thingy.name}">${thingy.name}</p>
+                      <p class = "orange">${(Array.isArray(thingy.price))?thingy.price[0]:thingy.price} da</p>
+                  </div> </a>
+          `;
+      }});
+      
     html += `</div>`;
     sub_menu.innerHTML += html;
   });
@@ -647,8 +638,12 @@ if (sp_id != 0) {
           <input type="radio" name="group" id="s" value="0" checked><label for="s">Large</label>
           <input type="radio" name="group" id="m" value="1"><label for="m">Semi</label>
           <input type="radio" name="group" id="l"  value="2"><label for="l">Mega</label> `;
-    const selected = document.querySelectorAll('input[name="group"]');
+    const selected = document.querySelectorAll('input[name="group"]');r
     price.innerHTML = item.price[0] + "da";
+
+      greed.innerHTML = html
+    
+    
     selected.forEach(function (r) {
       r.addEventListener("change", function () {
         price.innerHTML = item.price[r.value] + "da";
@@ -658,6 +653,13 @@ if (sp_id != 0) {
     console.log(selected);
   } else {
     price.innerHTML = item.price + "da";
+  }
+  if(item.sup){
+    let html = `<div class = "equal"><h2 class="title">supplements</h2>`
+    for (let x of item.sup){
+        html += `<p class="space" id="ingreed">${x}</p>`
+    }
+    greed.innerHTML += html
   }
 } 
 
