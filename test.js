@@ -250,7 +250,7 @@ const foods = {
         price:"50"
       },
       12:{
-        name:"croissant au butter",
+        name:"croissant au beurre",
         sup:["fourer au chocolate : 150da"],
         price:"100"
       },
