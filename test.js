@@ -281,7 +281,7 @@ const foods = {
         name:"Chausson",
         price:"120",
         ing:'',
-        sup:["promenade/amand/les duex"]
+        sup:["promenade" ,"amand" , "promenad et amand"]///amand/les duex
 
       },
       19:{
