@@ -242,7 +242,7 @@ const foods = {
   },
   16: { // bakeries
     cat_name: "viennoiseries",
-    cat_img: "",
+    cat_img: "png's/product/Pain au Chocolat.png",
     items: {
       11: {
         name:"Croissant",
