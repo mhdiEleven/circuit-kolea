@@ -399,7 +399,7 @@ const foods = {
     items: {
       11: {
         name: "jus doronge",
-        price: "400"
+        price: "450"
       },
       12: {
         name: "jus citron",
@@ -414,20 +414,24 @@ const foods = {
         price: "450"
       },
       15: {
-        name: "jus de pomme",
-        price: "500"
+        name: "jus pomme",
+        price: "550"
       },
       16: {
         name: "jus peche",
-        price: "450"
+        price: "500"
       },
       17: {
         name: "jus ananas",
-        price: "600"
+        price: "650"
       },
       18: {
         name: "jus cocktail",
-        price: "450"
+        price: "600"
+      },
+      19: {
+        name: "jus kiwi",
+        price: "650"
       },
     },
   },
@@ -439,15 +443,19 @@ const foods = {
     items: {
       11: {
         name: "frappuccino fraise",
-        price: "450"
+        price: "500"
       },
       12: {
         name: "frappuccino nutella",
-        price: "550"
+        price: "650"
       },
       13: {
+        name: "frappuccino choco",
+        price: "550"
+      },
+      14: {
         name: "frappuccino caramel",
-        price: "450"
+        price: "550"
       },
     },
   },
@@ -494,7 +502,7 @@ const foods = {
       },
       48: {
         name: "milkshake nutella banane",
-        price: "550"
+        price: "700"
       },
       49:{
         name: "milkshake choco",
@@ -502,11 +510,11 @@ const foods = {
       },
       50:{
         name:"milkshake choco banane",
-        price : "500"
+        price : "600"
       },
       12: {
         name: "milkshake fraise banane",
-        price: "550"
+        price: "700"
       },
       13: {
         name: "milkshake ferrero",
@@ -514,7 +522,7 @@ const foods = {
       },
       14: {
         name: "milkshake snickers",
-        price: "650"
+        price: "700"
       },
       15: {
         name: "milkshake lotus",
