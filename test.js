@@ -199,7 +199,7 @@ const foods = {
         price: "700"
       },
       15: {
-        name: "bubble waffles ",
+        name: "bubble waffles lotus",
         price: "700"
       },
       16: {
